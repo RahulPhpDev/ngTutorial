@@ -1,0 +1,49 @@
+<ul class="nav nav-pills nav-stacked" id="stacked-menu">
+        <li>
+          <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" href="#p1">Data Binding<div class="caret-container"><span class="caret arrow"></span></div></a>    
+          
+          <ul class="nav nav-pills nav-stacked collapse in" id="p1">
+            <li data-toggle="collapse" data-parent="#p1" href="#pv1">
+              <a class="nav-sub-container">Type<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+              <ul class="nav nav-pills nav-stacked collapse in" id="pv1">
+                <li><a href="#">Interpolation</a></li>
+                <li><a href="#">Property Binding</a></li>
+                <li><a href="#">Event Binding</a></li>
+                <li><a href="#">Two-way Binding</a></li>
+                <li class="nav-divider"></li>
+                <li><a routerLink="/binding" [class.activated]="currentUrl == '/binding'">Read All</a></li>
+              </ul>
+            
+            
+            <li data-toggle="collapse" data-parent="#p1" href="#pv2">
+              <a class="nav-sub-container">Your Views<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+              <ul class="nav nav-pills nav-stacked collapse in" id="pv2">
+                <li><a href="#">View One</a></li>
+                <li><a href="#">View Two</a></li>
+              </ul>
+            
+
+            <li data-toggle="collapse" data-parent="#p1" href="#pv3">
+              <a class="nav-sub-container">Reports<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+              <ul class="nav nav-pills nav-stacked collapse in" id="pv3">
+                <li><a href="#">Report One</a></li>
+                <li><a href="#">Report Two</a></li>
+              </ul>  
+            
+            
+          </ul>
+          
+        </li>
+        <li>
+          <a class="nav-container" data-toggle="collapse" data-parent="#stacked-menu" href="#p2">Process Two<div class="caret-container"><span class="caret arrow"></span></div></a>          
+          <ul class="nav nav-pills nav-stacked collapse" id="p2">
+            <li><a href="#">View One</a></li>
+            <li><a href="#">View Two</a></li>
+            <li><a href="#">View Three</a></li>
+            <li class="nav-divider"></li>
+            <li><a href="#">Trash</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-container" href="#">Process Three<div class="caret-container"><span class="caret arrow"></span></div></a></li>
+        <li><a routerLink = "/quiz" class="nav-container" href="#">F&Q</a></li>
+      </ul>
